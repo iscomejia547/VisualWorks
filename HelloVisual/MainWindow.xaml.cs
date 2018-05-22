@@ -24,5 +24,13 @@ namespace HelloVisual
         {
             InitializeComponent();
         }
+
+        private void OkBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (Hola.IsChecked==true)
+            {
+                MessageBox.Show("Hola Mundo");
+            }
+        }
     }
 }
