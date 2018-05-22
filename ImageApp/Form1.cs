@@ -31,5 +31,25 @@ namespace ImageApp
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StretchCHB_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bkgBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void openBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
