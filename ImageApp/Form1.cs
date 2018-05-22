@@ -24,7 +24,7 @@ namespace ImageApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -34,17 +34,27 @@ namespace ImageApp
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            PicMain.Image = null;
         }
 
         private void StretchCHB_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (StretchCHB.Checked)
+            {
+                PicMain.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+            else
+            {
+                PicMain.SizeMode = PictureBoxSizeMode.Normal;
+            }
         }
 
         private void bkgBtn_Click(object sender, EventArgs e)
         {
-
+            if (colorSet.ShowDialog() == DialogResult.OK)
+            {
+                PicMain.BackColor = colorSet.Color;
+            }
         }
 
         private void openBtn_Click(object sender, EventArgs e)
