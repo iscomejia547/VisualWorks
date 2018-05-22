@@ -1,0 +1,1 @@
+This are the proyects that conform the primers tutorials to GUI in Visual .NET
