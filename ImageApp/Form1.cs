@@ -49,7 +49,9 @@ namespace ImageApp
 
         private void openBtn_Click(object sender, EventArgs e)
         {
-
+            if(openDlg.ShowDialog()==DialogResult.OK){
+                PicMain.Load(openDlg.FileName);
+            }
         }
     }
 }

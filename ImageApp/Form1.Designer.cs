@@ -36,6 +36,8 @@
             this.bkgBtn = new System.Windows.Forms.Button();
             this.clearbtn = new System.Windows.Forms.Button();
             this.openBtn = new System.Windows.Forms.Button();
+            this.openDlg = new System.Windows.Forms.OpenFileDialog();
+            this.colorSet = new System.Windows.Forms.ColorDialog();
             this.TabLayout.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicMain)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
@@ -139,6 +141,13 @@
             this.openBtn.UseVisualStyleBackColor = true;
             this.openBtn.Click += new System.EventHandler(this.openBtn_Click);
             // 
+            // openDlg
+            // 
+            this.openDlg.FileName = "openFileDialog1";
+            this.openDlg.Filter = "JPEG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|BMP Files (*.bmp)|*.bmp|All file" +
+    "s (*.*)|*.* ";
+            this.openDlg.Title = "Abrir";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -166,6 +175,8 @@
         private System.Windows.Forms.Button bkgBtn;
         private System.Windows.Forms.Button clearbtn;
         private System.Windows.Forms.Button openBtn;
+        private System.Windows.Forms.OpenFileDialog openDlg;
+        private System.Windows.Forms.ColorDialog colorSet;
     }
 }
 
