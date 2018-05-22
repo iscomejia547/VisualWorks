@@ -30,6 +30,8 @@ namespace HelloVisual
             if (Hola.IsChecked==true)
             {
                 MessageBox.Show("Hola Mundo");
+            }else if(Adios.IsChecked==true){
+                MessageBox.Show("Adios mundo :v");
             }
         }
     }
