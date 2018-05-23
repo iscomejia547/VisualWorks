@@ -16,5 +16,10 @@ namespace MathTest
         {
             InitializeComponent();
         }
+
+        private void sum_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

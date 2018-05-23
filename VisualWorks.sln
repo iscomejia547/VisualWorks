@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloVisual", "HelloVisual\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageApp", "ImageApp\ImageApp.csproj", "{693451BE-D9D2-41C4-AA7E-B5F7E914A2F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathTest", "MathTest\MathTest.csproj", "{54EBF449-F2C5-445F-B511-05AE2FC90EB1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{693451BE-D9D2-41C4-AA7E-B5F7E914A2F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{693451BE-D9D2-41C4-AA7E-B5F7E914A2F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{693451BE-D9D2-41C4-AA7E-B5F7E914A2F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54EBF449-F2C5-445F-B511-05AE2FC90EB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54EBF449-F2C5-445F-B511-05AE2FC90EB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54EBF449-F2C5-445F-B511-05AE2FC90EB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54EBF449-F2C5-445F-B511-05AE2FC90EB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
