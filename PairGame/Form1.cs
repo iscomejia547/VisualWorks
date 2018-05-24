@@ -84,7 +84,7 @@ namespace PairGame
                 Label temp=item as Label;
                 if (temp != null)
                 {
-                    if (temp.ForeColor == Color.Black)
+                    if (temp.ForeColor == temp.BackColor)
                     {
                         return;
                     }
