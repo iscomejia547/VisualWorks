@@ -49,6 +49,9 @@ namespace MathTest
                 timelabel.Text = "Time's up";
                 MessageBox.Show("No terminaste a tiempo");
                 sumResult.Value = add1 + add2;
+                resResult.Value = res1 - res2;
+                multResult.Value = mul1 * mul2;
+                divResult.Value = (int) div1 / div2;
                 startbtn.Enabled = true;
             }
         }
@@ -84,7 +87,7 @@ namespace MathTest
             multRight.Text = mul2.ToString();
             div2 = randomizer.Next(2, 11);
             int q = randomizer.Next(2, 11);
-            div1 = div1 * q;
+            div1 = div2 * q;
             divLeft.Text = div1.ToString();
             divRight.Text = div2.ToString();
 
@@ -110,9 +113,32 @@ namespace MathTest
             timer.Start();
             startbtn.Enabled = false;
         }
-
+        private void labeler()
+        {
+            if(sumResult.Value == add1 + add2)
+            {
+                sumcheck.Text = "✓";
+                sumcheck.ForeColor = Color.Green;
+            }
+            if(resResult.Value == res1 - res2)
+            {
+                rescheck.Text = "✓";
+                rescheck.ForeColor = Color.Green;
+            }
+            if(multResult.Value == mul1 * mul2)
+            {
+                multcheck.Text = "✓";
+                multcheck.ForeColor = Color.Green;
+            }
+            if (divResult.Value == div1 / div2)
+            {
+                divcheck.Text = "✓";
+                divcheck.ForeColor = Color.Green;
+            }
+        }
         private bool checke()
         {
+            labeler();
             if (sumResult.Value == add1 + add2 && resResult.Value == res1-res2 && multResult.Value== mul1*mul2 
                 && divResult.Value==div1/div2) 
             {
