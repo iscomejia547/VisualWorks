@@ -89,7 +89,7 @@ namespace PairGame
                         return;
                     }
                 }
-                MessageBox.Show("Felicidades!\nHa Ganado", "", MessageBoxButtons.OK ,MessageBoxIcon.Exclamation);
+                MessageBox.Show("Felicidades!\nHa Ganado", "", MessageBoxButtons.OK ,MessageBoxIcon.Information);
                 if(MessageBox.Show("Desea jugar nuevamente?", "", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                 {
                     loadIcons();
