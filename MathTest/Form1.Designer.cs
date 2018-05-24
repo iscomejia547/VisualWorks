@@ -44,15 +44,15 @@
             this.multRight = new System.Windows.Forms.Label();
             this.div = new System.Windows.Forms.Label();
             this.divRight = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.divResult = new System.Windows.Forms.NumericUpDown();
+            this.multResult = new System.Windows.Forms.NumericUpDown();
+            this.resResult = new System.Windows.Forms.NumericUpDown();
             this.startbtn = new System.Windows.Forms.Button();
             this.timer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.sumResult)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.divResult)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.multResult)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resResult)).BeginInit();
             this.SuspendLayout();
             // 
             // timelabel
@@ -205,32 +205,32 @@
             this.divRight.Text = "?";
             this.divRight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // numericUpDown1
+            // divResult
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Segoe UI", 18F);
-            this.numericUpDown1.Location = new System.Drawing.Point(306, 278);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 39);
-            this.numericUpDown1.TabIndex = 5;
-            this.numericUpDown1.Enter += new System.EventHandler(this.answer_enter);
+            this.divResult.Font = new System.Drawing.Font("Segoe UI", 18F);
+            this.divResult.Location = new System.Drawing.Point(306, 278);
+            this.divResult.Name = "divResult";
+            this.divResult.Size = new System.Drawing.Size(120, 39);
+            this.divResult.TabIndex = 5;
+            this.divResult.Enter += new System.EventHandler(this.answer_enter);
             // 
-            // numericUpDown2
+            // multResult
             // 
-            this.numericUpDown2.Font = new System.Drawing.Font("Segoe UI", 18F);
-            this.numericUpDown2.Location = new System.Drawing.Point(306, 217);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(120, 39);
-            this.numericUpDown2.TabIndex = 4;
-            this.numericUpDown2.Enter += new System.EventHandler(this.answer_enter);
+            this.multResult.Font = new System.Drawing.Font("Segoe UI", 18F);
+            this.multResult.Location = new System.Drawing.Point(306, 217);
+            this.multResult.Name = "multResult";
+            this.multResult.Size = new System.Drawing.Size(120, 39);
+            this.multResult.TabIndex = 4;
+            this.multResult.Enter += new System.EventHandler(this.answer_enter);
             // 
-            // numericUpDown3
+            // resResult
             // 
-            this.numericUpDown3.Font = new System.Drawing.Font("Segoe UI", 18F);
-            this.numericUpDown3.Location = new System.Drawing.Point(306, 150);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(120, 39);
-            this.numericUpDown3.TabIndex = 3;
-            this.numericUpDown3.Enter += new System.EventHandler(this.answer_enter);
+            this.resResult.Font = new System.Drawing.Font("Segoe UI", 18F);
+            this.resResult.Location = new System.Drawing.Point(306, 150);
+            this.resResult.Name = "resResult";
+            this.resResult.Size = new System.Drawing.Size(120, 39);
+            this.resResult.TabIndex = 3;
+            this.resResult.Enter += new System.EventHandler(this.answer_enter);
             // 
             // startbtn
             // 
@@ -256,9 +256,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(480, 376);
             this.Controls.Add(this.startbtn);
-            this.Controls.Add(this.numericUpDown3);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.resResult);
+            this.Controls.Add(this.multResult);
+            this.Controls.Add(this.divResult);
             this.Controls.Add(this.divRight);
             this.Controls.Add(this.div);
             this.Controls.Add(this.multRight);
@@ -280,9 +280,9 @@
             this.Name = "Form1";
             this.Text = "Math Test (Aplicaciones 🅱ergas)";
             ((System.ComponentModel.ISupportInitialize)(this.sumResult)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.divResult)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.multResult)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resResult)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -305,9 +305,9 @@
         private System.Windows.Forms.Label multRight;
         private System.Windows.Forms.Label div;
         private System.Windows.Forms.Label divRight;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.NumericUpDown divResult;
+        private System.Windows.Forms.NumericUpDown multResult;
+        private System.Windows.Forms.NumericUpDown resResult;
         private System.Windows.Forms.Button startbtn;
         private System.Windows.Forms.Timer timer;
     }

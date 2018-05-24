@@ -38,6 +38,10 @@ namespace MathTest
             {
                 time -= 1;
                 timelabel.Text = time + " seconds";
+                if (time < 5)
+                {
+                    timelabel.ForeColor = Color.Red;
+                }
             }
             else
             {
@@ -70,11 +74,25 @@ namespace MathTest
             add2 = randomizer.Next(51);
             sumLeft.Text=add1.ToString();
             sumRight.Text = add2.ToString();
+            res1 = randomizer.Next(101);
+            res2 = randomizer.Next(res1);
+            restLeft.Text = res1.ToString();
+            restRight.Text = res2.ToString();
+            mul1 = randomizer.Next(2, 11);
+            mul2 = randomizer.Next(2, 11);
+            multLeft.Text = mul1.ToString();
+            multRight.Text = mul2.ToString();
+            div1 = randomizer.Next(2, 11);
+            int q = randomizer.Next(2, 11);
+            div2 = div1 * q;
+            divLeft.Text = div1.ToString();
+            divRight.Text = div2.ToString();
 
-
-
-
+            //
             sumResult.Value = 0;
+            resResult.Value = 0;
+            multResult.Value = 0;
+            divResult.Value = 0;
             time = 30;
             timelabel.Text = "30 seconds";
             timer.Start();
@@ -82,7 +100,8 @@ namespace MathTest
         }
         private bool checke()
         {
-            if (sumResult.Value == add1 + add2) 
+            if (sumResult.Value == add1 + add2 && resResult.Value == res1-res2 && multResult.Value== mul1*mul2 
+                && divResult.Value==div1/div2) 
             {
                 return true;
             }
