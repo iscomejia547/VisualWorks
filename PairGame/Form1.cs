@@ -18,6 +18,8 @@ namespace PairGame
             "!", "!", "N", "N", ",", ",", "k", "k",
             "b", "b", "v", "v", "w", "w", "z", "z"
         };
+        private Label first=null;
+        private Label second=null;
         public Form1()
         {
             InitializeComponent();
@@ -40,12 +42,36 @@ namespace PairGame
 
         private void label_clicked(object sender, EventArgs e)
         {
+            if (defTimer.Enabled) return;
             Label clicked = sender as Label;
             if (clicked != null)
             {
                 if (clicked.ForeColor == Color.Black) return;
-                clicked.ForeColor = Color.Black;
+                if (first==null)
+                {
+                    first = clicked;
+                    first.ForeColor = Color.Black;
+                    return;
+                }
+                second = clicked;
+                second.ForeColor = Color.Black;
+                if (first.Text.Equals(second.Text))
+                {
+                    first = null;
+                    second = null;
+                }
+                defTimer.Start();
             }
+        }
+
+        private void defTimer_Tick(object sender, EventArgs e)
+        {
+            defTimer.Stop();
+            first.ForeColor = first.BackColor;
+            second.ForeColor = second.BackColor;
+
+            first = null;
+            second = null;
         }
     }
 }
