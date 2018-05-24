@@ -82,13 +82,25 @@ namespace MathTest
             mul2 = randomizer.Next(2, 11);
             multLeft.Text = mul1.ToString();
             multRight.Text = mul2.ToString();
-            div1 = randomizer.Next(2, 11);
+            div2 = randomizer.Next(2, 11);
             int q = randomizer.Next(2, 11);
-            div2 = div1 * q;
+            div1 = div1 * q;
             divLeft.Text = div1.ToString();
             divRight.Text = div2.ToString();
 
             //
+            restart();
+        }
+        private void restart()
+        {
+            sumcheck.Text = "X";
+            sumcheck.ForeColor = Color.Red;
+            rescheck.Text = "X";
+            rescheck.ForeColor = Color.Red;
+            multcheck.Text = "X";
+            multcheck.ForeColor = Color.Red;
+            divcheck.Text = "X";
+            divcheck.ForeColor = Color.Red;
             sumResult.Value = 0;
             resResult.Value = 0;
             multResult.Value = 0;
@@ -98,6 +110,7 @@ namespace MathTest
             timer.Start();
             startbtn.Enabled = false;
         }
+
         private bool checke()
         {
             if (sumResult.Value == add1 + add2 && resResult.Value == res1-res2 && multResult.Value== mul1*mul2 

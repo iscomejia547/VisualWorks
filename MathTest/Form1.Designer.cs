@@ -49,6 +49,10 @@
             this.resResult = new System.Windows.Forms.NumericUpDown();
             this.startbtn = new System.Windows.Forms.Button();
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.sumcheck = new System.Windows.Forms.Label();
+            this.divcheck = new System.Windows.Forms.Label();
+            this.multcheck = new System.Windows.Forms.Label();
+            this.rescheck = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.sumResult)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.divResult)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.multResult)).BeginInit();
@@ -250,11 +254,59 @@
             this.timer.Interval = 1000;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
+            // sumcheck
+            // 
+            this.sumcheck.AutoSize = true;
+            this.sumcheck.Font = new System.Drawing.Font("Segoe UI", 15.5F);
+            this.sumcheck.ForeColor = System.Drawing.Color.Red;
+            this.sumcheck.Location = new System.Drawing.Point(476, 87);
+            this.sumcheck.Name = "sumcheck";
+            this.sumcheck.Size = new System.Drawing.Size(25, 30);
+            this.sumcheck.TabIndex = 16;
+            this.sumcheck.Text = "X";
+            // 
+            // divcheck
+            // 
+            this.divcheck.AutoSize = true;
+            this.divcheck.Font = new System.Drawing.Font("Segoe UI", 15.5F);
+            this.divcheck.ForeColor = System.Drawing.Color.Red;
+            this.divcheck.Location = new System.Drawing.Point(476, 287);
+            this.divcheck.Name = "divcheck";
+            this.divcheck.Size = new System.Drawing.Size(25, 30);
+            this.divcheck.TabIndex = 17;
+            this.divcheck.Text = "X";
+            // 
+            // multcheck
+            // 
+            this.multcheck.AutoSize = true;
+            this.multcheck.Font = new System.Drawing.Font("Segoe UI", 15.5F);
+            this.multcheck.ForeColor = System.Drawing.Color.Red;
+            this.multcheck.Location = new System.Drawing.Point(476, 226);
+            this.multcheck.Name = "multcheck";
+            this.multcheck.Size = new System.Drawing.Size(25, 30);
+            this.multcheck.TabIndex = 18;
+            this.multcheck.Text = "X";
+            // 
+            // rescheck
+            // 
+            this.rescheck.AutoSize = true;
+            this.rescheck.Font = new System.Drawing.Font("Segoe UI", 15.5F);
+            this.rescheck.ForeColor = System.Drawing.Color.Red;
+            this.rescheck.Location = new System.Drawing.Point(476, 154);
+            this.rescheck.Name = "rescheck";
+            this.rescheck.Size = new System.Drawing.Size(25, 30);
+            this.rescheck.TabIndex = 19;
+            this.rescheck.Text = "X";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 376);
+            this.ClientSize = new System.Drawing.Size(538, 376);
+            this.Controls.Add(this.rescheck);
+            this.Controls.Add(this.multcheck);
+            this.Controls.Add(this.divcheck);
+            this.Controls.Add(this.sumcheck);
             this.Controls.Add(this.startbtn);
             this.Controls.Add(this.resResult);
             this.Controls.Add(this.multResult);
@@ -310,6 +362,10 @@
         private System.Windows.Forms.NumericUpDown resResult;
         private System.Windows.Forms.Button startbtn;
         private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.Label sumcheck;
+        private System.Windows.Forms.Label divcheck;
+        private System.Windows.Forms.Label multcheck;
+        private System.Windows.Forms.Label rescheck;
     }
 }
 
