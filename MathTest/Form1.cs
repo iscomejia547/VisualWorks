@@ -15,6 +15,16 @@ namespace MathTest
         Random randomizer = new Random();
         private int add1, add2, res1, res2, mul1, mul2, div1, div2, time;
 
+        private void answer_enter(object sender, EventArgs e)
+        {
+            NumericUpDown answer = sender as NumericUpDown;
+            if (answer != null)
+            {
+                int length = answer.Value.ToString().Length;
+                answer.Select(0, length);
+            }
+        }
+
         private void timer_Tick(object sender, EventArgs e)
         {
             if (checke())

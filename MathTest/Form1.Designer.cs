@@ -92,6 +92,7 @@
             this.sumResult.Name = "sumResult";
             this.sumResult.Size = new System.Drawing.Size(120, 39);
             this.sumResult.TabIndex = 2;
+            this.sumResult.Enter += new System.EventHandler(this.answer_enter);
             // 
             // sumRight
             // 
@@ -211,6 +212,7 @@
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(120, 39);
             this.numericUpDown1.TabIndex = 5;
+            this.numericUpDown1.Enter += new System.EventHandler(this.answer_enter);
             // 
             // numericUpDown2
             // 
@@ -219,6 +221,7 @@
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(120, 39);
             this.numericUpDown2.TabIndex = 4;
+            this.numericUpDown2.Enter += new System.EventHandler(this.answer_enter);
             // 
             // numericUpDown3
             // 
@@ -227,6 +230,7 @@
             this.numericUpDown3.Name = "numericUpDown3";
             this.numericUpDown3.Size = new System.Drawing.Size(120, 39);
             this.numericUpDown3.TabIndex = 3;
+            this.numericUpDown3.Enter += new System.EventHandler(this.answer_enter);
             // 
             // startbtn
             // 
