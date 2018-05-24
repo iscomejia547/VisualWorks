@@ -89,7 +89,7 @@
             this.sumResult.Location = new System.Drawing.Point(306, 82);
             this.sumResult.Name = "sumResult";
             this.sumResult.Size = new System.Drawing.Size(120, 39);
-            this.sumResult.TabIndex = 4;
+            this.sumResult.TabIndex = 2;
             // 
             // sumRight
             // 
@@ -208,7 +208,7 @@
             this.numericUpDown1.Location = new System.Drawing.Point(306, 278);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(120, 39);
-            this.numericUpDown1.TabIndex = 16;
+            this.numericUpDown1.TabIndex = 5;
             // 
             // numericUpDown2
             // 
@@ -216,7 +216,7 @@
             this.numericUpDown2.Location = new System.Drawing.Point(306, 217);
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(120, 39);
-            this.numericUpDown2.TabIndex = 17;
+            this.numericUpDown2.TabIndex = 4;
             // 
             // numericUpDown3
             // 
@@ -224,7 +224,7 @@
             this.numericUpDown3.Location = new System.Drawing.Point(306, 150);
             this.numericUpDown3.Name = "numericUpDown3";
             this.numericUpDown3.Size = new System.Drawing.Size(120, 39);
-            this.numericUpDown3.TabIndex = 18;
+            this.numericUpDown3.TabIndex = 3;
             // 
             // startbtn
             // 
@@ -234,9 +234,10 @@
             this.startbtn.Location = new System.Drawing.Point(148, 329);
             this.startbtn.Name = "startbtn";
             this.startbtn.Size = new System.Drawing.Size(159, 35);
-            this.startbtn.TabIndex = 19;
+            this.startbtn.TabIndex = 1;
             this.startbtn.Text = "Iniciar la prueba";
             this.startbtn.UseVisualStyleBackColor = true;
+            this.startbtn.Click += new System.EventHandler(this.startbtn_Click);
             // 
             // Form1
             // 
