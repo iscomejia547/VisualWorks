@@ -12,14 +12,10 @@ namespace PairGame
 {
     public partial class Form1 : Form
     {
-        private Random rnd = new Random();
-        private List<string> icons = new List<string>()
-        {
-            "!", "!", "N", "N", ",", ",", "k", "k",
-            "b", "b", "v", "v", "w", "w", "z", "z"
-        };
+        
         private Label first=null;
         private Label second=null;
+        private Color hide = Color.CornflowerBlue;
         public Form1()
         {
             InitializeComponent();
@@ -27,12 +23,18 @@ namespace PairGame
         }
         private void loadIcons()
         {
+            Random rnd = new Random();
+            List<string> icons = new List<string>()
+            {
+                "!", "!", "N", "N", ",", ",", "k", "k",
+                "b", "b", "v", "v", "w", "w", "z", "z"
+            };
             foreach (Control item in GameTab.Controls)
             {
                 Label lbl = item as Label;
                 if (lbl != null)
                 {
-                    int num = rnd.Next(icons.Count);
+                    int num = rnd.Next(0, icons.Count);
                     lbl.Text = icons[num];
                     lbl.ForeColor = lbl.BackColor;
                     icons.RemoveAt(num);
@@ -58,7 +60,7 @@ namespace PairGame
 
                 checke();
 
-                if (first.Text.Equals(second.Text))
+                if (first.Text==second.Text)
                 {
                     first = null;
                     second = null;
@@ -81,7 +83,7 @@ namespace PairGame
         {
             foreach (Control item in GameTab.Controls)
             {
-                Label temp=item as Label;
+                Label temp = item as Label;
                 if (temp != null)
                 {
                     if (temp.ForeColor == temp.BackColor)
@@ -89,17 +91,16 @@ namespace PairGame
                         return;
                     }
                 }
-                MessageBox.Show("Felicidades!\nHa Ganado", "", MessageBoxButtons.OK ,MessageBoxIcon.Information);
-                if(MessageBox.Show("Desea jugar nuevamente?", "", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
-                {
-                    loadIcons();
-                }
-                else
-                {
-                    this.Close();
-                }
             }
-            
+            MessageBox.Show("Felicidades!\nHa Ganado", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (MessageBox.Show("Desea jugar nuevamente?", "", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                loadIcons();
+            }
+            else
+            {
+                this.Close();
+            }
         }
     }
 }
