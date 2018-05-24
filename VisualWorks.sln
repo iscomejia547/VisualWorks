@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageApp", "ImageApp\ImageA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathTest", "MathTest\MathTest.csproj", "{54EBF449-F2C5-445F-B511-05AE2FC90EB1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PairGame", "PairGame\PairGame.csproj", "{CFC4A83E-F213-4B00-9CE0-698EADCBC062}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{54EBF449-F2C5-445F-B511-05AE2FC90EB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54EBF449-F2C5-445F-B511-05AE2FC90EB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54EBF449-F2C5-445F-B511-05AE2FC90EB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFC4A83E-F213-4B00-9CE0-698EADCBC062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFC4A83E-F213-4B00-9CE0-698EADCBC062}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFC4A83E-F213-4B00-9CE0-698EADCBC062}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFC4A83E-F213-4B00-9CE0-698EADCBC062}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
