@@ -55,10 +55,14 @@ namespace PairGame
                 }
                 second = clicked;
                 second.ForeColor = Color.Black;
+
+                checke();
+
                 if (first.Text.Equals(second.Text))
                 {
                     first = null;
                     second = null;
+                    return;
                 }
                 defTimer.Start();
             }
@@ -72,6 +76,30 @@ namespace PairGame
 
             first = null;
             second = null;
+        }
+        private void checke()
+        {
+            foreach (Control item in GameTab.Controls)
+            {
+                Label temp=item as Label;
+                if (temp != null)
+                {
+                    if (temp.ForeColor == Color.Black)
+                    {
+                        return;
+                    }
+                }
+                MessageBox.Show("Felicidades!\nHa Ganado", "", MessageBoxButtons.OK ,MessageBoxIcon.Exclamation);
+                if(MessageBox.Show("Desea jugar nuevamente?", "", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                {
+                    loadIcons();
+                }
+                else
+                {
+                    this.Close();
+                }
+            }
+            
         }
     }
 }
